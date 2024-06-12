@@ -1,6 +1,15 @@
 [
-  {"title":"Star Wars"},
-  {"title":"Star Wars The Force Awakens","year":2015},
-  {"title":"Dr. Strangelove or How I Learned to Stop Worrying and Love the Bomb","year":1964},
-  {"title":"Plan 9 from outer space","year":1959}
+  {},
+  {"title":"","year":0},
+  {"title":""},
+  {"year":0},
+  {"title":"","year":2001},
+  {"title":"The Shawshank Redemption","year":1994},
+  {"title":"The Godfather","year":1972},
+  {"title":"The Lord of the Rings: The Return of the King","year":2003},
+  {"title":"The Lord of the Rings: The Fellowship of the Ring","year":2001},
+
+  {"title":"Once Upon a Time in the West","year":1968},
+  {"title":"Dr. Strangelove or: How I Learned to Stop Worrying and Love the Bomb","year":1964},
+  {"title":"Coco","year":2003}
 ]

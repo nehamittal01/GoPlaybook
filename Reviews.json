@@ -1,7 +1,17 @@
 [
-  {"title":"Star Wars","review":"Great, this film was","score":77},
-  {"title":"Star Wars The Force Awakens","review":"A long time ago in a galaxy far far away someone made the best sci-fi film of all time. Then some chap came along and basically made the same movie again","score":50},
-  {"title":"Metropolis","review":"Another movie about a robot. Very strong futuristic look. But also very very old. Hard to understand what was happening because the audio was too low","score":15},
-  {"title":"Dr. Strangelove or How I Learned to Stop Worrying and Love the Bomb","review":"Hilarious Kubrick satire","score":100},
-  {"title":"Plan 9 from outer space","review":"So bad it's bad","score":7}
+  {},
+  {"title":"","review":""},
+  {"title":"","review":"","score":0},
+  {"review":"","score":0},
+  {"title":"","score":0},
+  {"title":"","review":"This was great movie"},
+  {"title":"The Shawshank Redemption","review":"Great, this film was","score":77},
+  {"title":"The Godfather","review":"A long time ago in a galaxy far far away someone made the best sci-fi film of all time. Then some chap came along and basically made the same movie again","score":100},
+  {"title":"The Lord of the Rings: The Return of the King","review":"Another movie about a robot. Very strong futuristic look. But also very very old. Hard to understand then","score":15},
+  {"title":"The Lord of the Rings: The Fellowship of the Ring","review":"Hilarious Kubrick satire","score":100},
+  {"title":" Star Wars: Episode IV - A New Hope","review":"So bad it's bad","score":7},
+
+  {"title":"Once Upon a Time in the West","review":"Great, this film was","score":77},
+  {"title":"Dr. Strangelove or: How I Learned to Stop Worrying and Love the Bomb","review":"A long time ago in a galaxy far far away someone made the best sci-fi film of all time. Then some chap came along and basically made the same movie again","score":50},
+  {"title":"Coco","review":"Another movie about a robot. Very strong futuristic look. But also very very old. Hard to understand what was happening because the audio was too low","score":15}
 ]

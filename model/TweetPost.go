@@ -1,6 +1,10 @@
 package model
 
-import "strconv"
+import (
+	"goplaybook/utils"
+	"strconv"
+	"strings"
+)
 
 type TweetPost struct {
 	Title  string `json:"title,omitempty"`
@@ -11,18 +15,22 @@ type TweetPost struct {
 
 func CreateNewTweetPost(review string, rating string, title string, year int) *TweetPost {
 	tweetPost := new(TweetPost)
-	if title != "" {
-		tweetPost.Title = title
-	}
+	if title != "" && len(utils.TrimSpace(title)) > 0 {
 
-	if rating != "" {
-		tweetPost.Rating = rating
+		tweetPost.Title = utils.TrimLeftAndRight(title, " ")
 	}
-	if review != "" {
-		tweetPost.Review = review
+	if rating != "" && len(utils.TrimSpace(rating)) > 0 {
+
+		tweetPost.Rating = utils.TrimLeftAndRight(rating, " ")
+	}
+	if review != "" && len(utils.TrimSpace(review)) > 0 {
+
+		tweetPost.Review = utils.TrimLeftAndRight(review, " ")
 	}
 	if year > 0 {
+
 		tweetPost.Year = strconv.Itoa(year)
+		tweetPost.Year = utils.TrimLeftAndRight(tweetPost.Year, " ")
 	} else {
 		tweetPost.Year = ""
 	}
@@ -35,5 +43,34 @@ func UpdateTweetPost(tweetPost *TweetPost, year int) {
 	} else {
 		tweetPost.Year = ""
 	}
+
+}
+
+func BuildPost(title string, year string, review string, rating string) string {
+	var finalPost strings.Builder
+
+	if title != "" {
+		finalPost.WriteString(title)
+	}
+
+	if year != "" {
+		finalPost.WriteString(" (")
+		finalPost.WriteString(year)
+		finalPost.WriteString(")")
+	}
+
+	if review != "" {
+		finalPost.WriteString(": ")
+		finalPost.WriteString(review)
+	} else {
+		finalPost.WriteString(": ")
+	}
+
+	if rating != "" {
+		finalPost.WriteString(" ")
+		finalPost.WriteString(rating)
+	}
+
+	return finalPost.String()
 
 }
